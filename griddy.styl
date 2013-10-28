@@ -1,0 +1,51 @@
+
+grid-system(
+	cols = 12,
+	gutter = 20px,
+	child = '.col',
+	all-columns = true,
+	separate = '-',
+	breakpoint = 400px
+	)
+
+	all = ''
+
+	col-size(span)
+		width (span * 100 / cols)%
+
+	margin-left (gutter / -2)
+	margin-right @margin-left
+	clearfix()
+
+	if all-columns
+		all =  child + separate + '1'
+
+		for x in (2 .. (cols - 1))
+			all = all + ', & ' + child + separate + x
+
+		for x in (1 .. cols)
+			{child + separate + x}
+				col-size(x)
+
+	else
+		all = child
+
+		{all}
+			col-size(1, false)
+
+	{all}
+		float left
+		padding 0 (gutter / 2)
+		box-sizing border-box
+		min-height 1px
+
+	unquote('@media screen and (max-width: ' + media-mobile + ') {')
+
+	margin 0
+
+	{all}
+		float none
+		width auto
+		display block
+
+	unquote('}')

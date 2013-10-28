@@ -1,0 +1,11 @@
+{
+  "name": "griddy",
+  "version": "0.0.0",
+  "description": "Grid system plugin for stylus",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tancredi Trugenberger",
+  "license": "BSD-2-Clause"
+}
