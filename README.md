@@ -31,9 +31,20 @@ You can also just add griddy to your stylus files directory and import it
 @import './griddy'
 ```
 
-## Mixins
+## Usage
+
+Apply the mixin `grid-system` to any selector to define a grid system.
 
 * `grid-system(cols = 12, gutter = 20px, child = '.col', all-columns = true, separate = '-', breakpoint = 400px)`
+
+#### Parameters
+
+* `cols` - Number of total columns
+* `gutter` - Horizontal space between columns and vertical space between rows
+* `child` - Child selector suffix (Or full selector, if all-columns is set to false)
+* `all-columns` - Generate selectors for all numbers of spans, using `[selector][separate][spans]` convention
+* `separate` - String separating `child` prefix from spans count, used when `all-columns` is set to true
+* `breakpoint` - Max-size for responsive media query (Columns will break to full-width under specified size)
 
 ## Example
 
