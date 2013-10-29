@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Griddy - 10 columns grid </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+    <div class="page">
+
+        <h1>10 columns grid</h1>
+
+        <h3>Stylus example</h3>
+
+<pre><code>
+@import 'griddy'
+
+.row-10
+    grid-system(10)
+
+</pre></code>
+
+        <h3>HTML example</h3>
+
+<pre><code>
+<div class="row-10">
+    <div class="col-5"> [...] </div>
+    <div class="col-5"> [...] </div>
+</div>
+
+</pre></code>
+
+        <h3>Live examples</h3>
+
+        <div class="row row-10">
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+        </div>
+
+        <div class="row row-10">
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+            <div class="col-3">
+                <div class="box">.col-3</div>
+            </div>
+            <div class="col-2">
+                <div class="box">.col-2</div>
+            </div>
+            <div class="col-3">
+                <div class="box">.col-3</div>
+            </div>
+        </div>
+
+        <div class="row row-10">
+            <div class="col-5">
+                <div class="box">.col-5</div>
+            </div>
+            <div class="col-5">
+                <div class="box">.col-5</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="box">.col-4</div>
+            </div>
+            <div class="col-6">
+                <div class="box">.col-6</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

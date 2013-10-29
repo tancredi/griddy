@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Griddy - 10 columns grid </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+    <div class="page">
+
+        <h1>10 columns grid</h1>
+
+        <h3>Stylus example</h3>
+
+<pre><code>
+@import 'griddy'
+
+.split
+    grid-system(2, 30px, '.half', false)
+
+</pre></code>
+
+        <h3>HTML example</h3>
+
+<pre><code>
+<div class="split">
+    <div class="half"> [...] </div>
+    <div class="half"> [...] </div>
+</div>
+
+</pre></code>
+
+        <h3>Live examples</h3>
+
+        <div class="split">
+            <div class="half">
+                <div class="box">.half</div>
+            </div>
+            <div class="half">
+                <div class="box">.half</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

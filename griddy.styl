@@ -1,37 +1,43 @@
 
-grid-system(
-	cols = 12,
-	gutter = 20px,
-	child = '.col',
-	all-columns = true,
-	separate = '-',
-	breakpoint = 400px
-	)
+clearfix()
+	zoom 1
+
+	&:before, &:after
+		content ''
+		display table
+
+	&:after
+		clear both
+
+
+grid-column(span, cols = 12)
+	width (span * 100 / cols)%
+
+
+grid-system(cols = 12, gutter = 20px, child = '.col', all-columns = true, separate = '-', breakpoint = 400px)
+	margin-bottom gutter
 
 	all = ''
-
-	col-size(span)
-		width (span * 100 / cols)%
 
 	margin-left (gutter / -2)
 	margin-right @margin-left
 	clearfix()
 
 	if all-columns
-		all =  child + separate + '1'
+		all = '& ' + child + separate + '1'
 
 		for x in (2 .. (cols - 1))
 			all = all + ', & ' + child + separate + x
 
 		for x in (1 .. cols)
 			{child + separate + x}
-				col-size(x)
+				grid-column(x, cols)
 
 	else
 		all = child
 
 		{all}
-			col-size(1, false)
+			grid-column(1, cols)
 
 	{all}
 		float left
@@ -39,13 +45,15 @@ grid-system(
 		box-sizing border-box
 		min-height 1px
 
-	unquote('@media screen and (max-width: ' + media-mobile + ') {')
+	unquote('@media screen and (max-width: ' + breakpoint + ') {')
 
-	margin 0
+	&
+		margin 0
 
-	{all}
-		float none
-		width auto
-		display block
+		{all}
+			float none
+			width auto
+			display block
+			margin-bottom gutter
 
 	unquote('}')

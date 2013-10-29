@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Griddy - Custom class </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+    <div class="page">
+
+        <h1>Custom class</h1>
+
+        <h3>Stylus example</h3>
+
+<pre><code>
+@import 'griddy'
+
+.split-3
+    grid-system(3, 10px, '.thirds', true, ' thirds-')
+
+</pre></code>
+
+        <h3>HTML example</h3>
+
+<pre><code>
+<!-- Custom class thirds example-->
+
+<div class="split-3">
+    <div class="thirds thirds-1"> [...] </div>
+    <div class="thirds thirds-1"> [...] </div>
+    <div class="thirds thirds-1"> [...] </div>
+</div>
+
+</pre></code>
+
+        <h3>Live examples</h3>
+
+        <div class="split-3">
+            <div class="thirds thirds-1">
+                <div class="box">.thirds.thirds-1</div>
+            </div>
+            <div class="thirds thirds-1">
+                <div class="box">.thirds.thirds-1</div>
+            </div>
+            <div class="thirds thirds-1">
+                <div class="box">.thirds.thirds-1</div>
+            </div>
+        </div>
+
+        <div class="split-3">
+            <div class="thirds thirds-2">
+                <div class="box">.thirds.thirds-2</div>
+            </div>
+            <div class="thirds thirds-1">
+                <div class="box">.thirds.thirds-1</div>
+            </div>
+        </div>
+
+        <div class="split-3">
+            <div class="thirds thirds-3">
+                <div class="box">.thirds.thirds-3</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

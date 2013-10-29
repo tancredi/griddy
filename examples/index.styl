@@ -1,0 +1,72 @@
+
+@import '../griddy.styl'
+@import url('http://fonts.googleapis.com/css?family=Nixie+One')
+
+base-color = #382f3d
+
+ellipsis()
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+
+body
+	background base-color
+
+h1, h2, h3, h4, h5, h6
+	font-family 'Nixie One', Helvetica, Arial, sans-serif
+	font-weight bold
+	text-align center
+	color lighten(base-color, 50%)
+	margin-top 0
+
+h1
+	font-size 40px
+	padding-bottom 25px
+	margin-top 20px
+	border-bottom 1px solid lighten(base-color, 10%)
+	color lighten(base-color, 90%)
+
+h3
+	text-align left
+	font-weigh bold
+
+pre
+	background #181818
+	display block
+	padding 10px 15px
+	margin-bottom 20px
+	color #999
+	border-radius 3px
+
+	code
+		margin 0
+
+.page
+	max-width 940px
+	margin auto
+
+.row-12
+	grid-system()
+
+.row-10
+	grid-system(10)
+
+.split
+	grid-system(2, 30px, '.half', false)
+
+.split-3
+	grid-system(3, 10px, '.thirds', true, '.thirds-')
+
+.col-test
+	grid-column(3, 12)
+
+.box
+	background darken(base-color, 9)
+	height 60px
+	border-radius 3px
+	line-height 60px
+	text-align center
+	font-family Monaco, monospace
+	color lighten(base-color, 10)
+	font-size 12px
+	ellipsis()
