@@ -1,5 +1,5 @@
 
-var version = require('../package.json').version;
+var version = require('./package.json').version;
 
 var plugin = function () {
     return function (style) {
