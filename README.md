@@ -16,10 +16,10 @@ Install:
 
 ```
 var stylus = require('stylus'),
-	griddy = require('griddy')
+    griddy = require('griddy')
 
 function compile (src) {
-	return stylus(src).set('filename', path).use(griddy());
+    return stylus(src).set('filename', path).use(griddy());
 }
 ```
 
@@ -48,22 +48,49 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 
 ## Example
 
+#### Stylus
+
 ```
+@import 'griddy'
+
 .row
-	grid-system(12, 20px, '.col')
+    grid-system(12, 20px, '.col')
 ```
 
+#### HTML
+
 ```
-	<div class="row">
-		<div class="col-3">
+<div class="row">
+    <div class="col-3">
 
-			<!-- [ … ] -->
+        <!-- [ … ] -->
 
-		</div>
-		<div class="col-9">
+    </div>
+    <div class="col-9">
 
-			<!-- [ … ] -->
+        <!-- [ … ] -->
 
-		</div>
-	</div>
+    </div>
+</div>
+```
+
+## Custom class
+
+#### Stylus
+
+```
+@import 'griddy'
+
+.split-3
+    grid-system(3, 10px, '.thirds', true, ' thirds-')
+```
+
+#### HTML
+
+```
+<div class="split-3">
+    <div class="thirds thirds-1"> [...] </div>
+    <div class="thirds thirds-1"> [...] </div>
+    <div class="thirds thirds-1"> [...] </div>
+</div>
 ```
