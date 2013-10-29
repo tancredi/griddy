@@ -59,7 +59,7 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 
 #### HTML
 
-```
+```html
 <div class="row">
     <div class="col-3">
 
@@ -87,7 +87,7 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 
 #### HTML
 
-```
+```html
 <div class="split-3">
     <div class="thirds thirds-1"> [...] </div>
     <div class="thirds thirds-1"> [...] </div>
