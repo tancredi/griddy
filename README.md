@@ -6,7 +6,7 @@
 
 * [12 columns grid](http://tancredi.github.io/griddy/examples/12-col-grid.html)
 * [10 columns grid](http://tancredi.github.io/griddy/examples/10-col-grid.html)
-* [Custom class grid](http://tancredi.github.io/griddy/examples/custom-class-grid.html)
+* [Custom class grid](http://tancredi.github.io/griddy/examples/custom-class.html)
 
 ## Plugin setup
 
