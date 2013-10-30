@@ -2,6 +2,12 @@
 
 > A Stylus plugin that makes it easy to create custom, simple, responsive grids
 
+## Examples
+
+* [12 columns grid](tancredi.github.io/griddy/examples/12-col-grid.html)
+* [10 columns grid](tancredi.github.io/griddy/examples/10-col-grid.html)
+* [Custom class grid](tancredi.github.io/griddy/examples/custom-class-grid.html)
+
 ## Plugin setup
 
 Install:
