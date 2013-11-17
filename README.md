@@ -100,3 +100,7 @@ Apply the mixin `grid-system` to any selector to define a grid system.
     <div class="thirds thirds-1"> [...] </div>
 </div>
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tancredi/griddy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
