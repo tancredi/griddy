@@ -92,22 +92,30 @@ pre code {
 .row-12 .col-12 {
   width: 100%;
 }
-.row-12 .col-1, .row-12 .col-2, .row-12 .col-3, .row-12 .col-4, .row-12 .col-5, .row-12 .col-6, .row-12 .col-7, .row-12 .col-8, .row-12 .col-9, .row-12 .col-10, .row-12 .col-11 {
+.row-12 .col-1,
+.row-12 .col-2,
+.row-12 .col-3,
+.row-12 .col-4,
+.row-12 .col-5,
+.row-12 .col-6,
+.row-12 .col-7,
+.row-12 .col-8,
+.row-12 .col-9,
+.row-12 .col-10,
+.row-12 .col-11 {
   float: left;
   padding: 0 10px;
   box-sizing: border-box;
   min-height: 1px;
 }
-@media screen and (max-width: 400px) {
-.row-12 {
+@include {
   margin: 0;
-}
-.row-12 .col-1, .row-12 .col-2, .row-12 .col-3, .row-12 .col-4, .row-12 .col-5, .row-12 .col-6, .row-12 .col-7, .row-12 .col-8, .row-12 .col-9, .row-12 .col-10, .row-12 .col-11 {
-  float: none;
-  width: auto;
-  display: block;
-  margin-bottom: 20px;
-}
+  .row-12 .col-1, .row-12 .col-2, .row-12 .col-3, .row-12 .col-4, .row-12 .col-5, .row-12 .col-6, .row-12 .col-7, .row-12 .col-8, .row-12 .col-9, .row-12 .col-10, .row-12 .col-11 {
+    float: none;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 .row-10 {
   margin-bottom: 20px;
@@ -155,22 +163,28 @@ pre code {
 .row-10 .col-10 {
   width: 100%;
 }
-.row-10 .col-1, .row-10 .col-2, .row-10 .col-3, .row-10 .col-4, .row-10 .col-5, .row-10 .col-6, .row-10 .col-7, .row-10 .col-8, .row-10 .col-9 {
+.row-10 .col-1,
+.row-10 .col-2,
+.row-10 .col-3,
+.row-10 .col-4,
+.row-10 .col-5,
+.row-10 .col-6,
+.row-10 .col-7,
+.row-10 .col-8,
+.row-10 .col-9 {
   float: left;
   padding: 0 10px;
   box-sizing: border-box;
   min-height: 1px;
 }
-@media screen and (max-width: 400px) {
-.row-10 {
+@include {
   margin: 0;
-}
-.row-10 .col-1, .row-10 .col-2, .row-10 .col-3, .row-10 .col-4, .row-10 .col-5, .row-10 .col-6, .row-10 .col-7, .row-10 .col-8, .row-10 .col-9 {
-  float: none;
-  width: auto;
-  display: block;
-  margin-bottom: 20px;
-}
+  .row-10 .col-1, .row-10 .col-2, .row-10 .col-3, .row-10 .col-4, .row-10 .col-5, .row-10 .col-6, .row-10 .col-7, .row-10 .col-8, .row-10 .col-9 {
+    float: none;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 .split {
   margin-bottom: 30px;
@@ -197,16 +211,14 @@ pre code {
   box-sizing: border-box;
   min-height: 1px;
 }
-@media screen and (max-width: 400px) {
-.split {
+@include {
   margin: 0;
-}
-.split .half {
-  float: none;
-  width: auto;
-  display: block;
-  margin-bottom: 30px;
-}
+  .split .half {
+    float: none;
+    width: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
 }
 .split-3 {
   margin-bottom: 10px;
@@ -233,22 +245,21 @@ pre code {
 .split-3 .thirds.thirds-3 {
   width: 100%;
 }
-.split-3 .thirds.thirds-1, .split-3 .thirds.thirds-2 {
+.split-3 .thirds.thirds-1,
+.split-3 .thirds.thirds-2 {
   float: left;
   padding: 0 5px;
   box-sizing: border-box;
   min-height: 1px;
 }
-@media screen and (max-width: 400px) {
-.split-3 {
+@include {
   margin: 0;
-}
-.split-3 .thirds.thirds-1, .split-3 .thirds.thirds-2 {
-  float: none;
-  width: auto;
-  display: block;
-  margin-bottom: 10px;
-}
+  .split-3 .thirds.thirds-1, .split-3 .thirds.thirds-2 {
+    float: none;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 .col-test {
   width: 25%;
