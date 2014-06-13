@@ -45,9 +45,10 @@ grid-system(cols = 12, gutter = 20px, child = '.col', all-columns = true, separa
 		box-sizing border-box
 		min-height 1px
 
-	unquote('@media screen and (max-width: ' + breakpoint + ') {')
+	mediaQuery = 'screen and (max-width: ' + breakpoint + ')'
 
-	@include
+	@media mediaQuery
+
 		margin 0
 
 		{all}
@@ -55,5 +56,3 @@ grid-system(cols = 12, gutter = 20px, child = '.col', all-columns = true, separa
 			width auto
 			display block
 			margin-bottom gutter
-
-	unquote('}')

@@ -1,6 +1,6 @@
 {
   "name": "griddy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Grid system plugin for stylus",
   "main": "plugin.js",
   "scripts": {
