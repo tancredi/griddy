@@ -41,13 +41,14 @@ You can also just add griddy to your stylus files directory and import it
 
 Apply the mixin `grid-system` to any selector to define a grid system.
 
-* `grid-system(cols = 12, gutter = 20px, child = '.col', all-columns = true, separate = '-', breakpoint = 400px)`
+* `grid-system(cols = 12, gutter = 20px, child = '.col', offset = '.off', all-columns = true, separate = '-', breakpoint = 400px)`
 
 #### Parameters
 
 * `cols` - Number of total columns
 * `gutter` - Horizontal space between columns and vertical space between rows
 * `child` - Child selector suffix (Or full selector, if all-columns is set to false)
+* `offset` - Offset selector suffix
 * `all-columns` - Generate selectors for all numbers of spans, using `[selector][separate][spans]` convention
 * `separate` - String separating `child` prefix from spans count, used when `all-columns` is set to true
 * `breakpoint` - Max-size for responsive media query (Columns will break to full-width under specified size)
@@ -60,7 +61,7 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 @import 'griddy'
 
 .row
-    grid-system(12, 20px, '.col')
+    grid-system(12, 20px, '.col', '.off')
 ```
 
 #### HTML
@@ -69,12 +70,12 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 <div class="row">
     <div class="col-3">
 
-        <!-- [ … ] -->
+        <!-- 3 columns -->
 
     </div>
-    <div class="col-9">
+    <div class="col-8 off-1">
 
-        <!-- [ … ] -->
+        <!-- 8 columns offset by 1 -->
 
     </div>
 </div>
@@ -103,4 +104,3 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tancredi/griddy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

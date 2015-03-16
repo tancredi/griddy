@@ -90,6 +90,42 @@ pre code {
 .row-12 .col-12 {
   width: 100%;
 }
+.row-12 .off-1 {
+  margin-left: 8.333333333333334%;
+}
+.row-12 .off-2 {
+  margin-left: 16.666666666666668%;
+}
+.row-12 .off-3 {
+  margin-left: 25%;
+}
+.row-12 .off-4 {
+  margin-left: 33.333333333333336%;
+}
+.row-12 .off-5 {
+  margin-left: 41.666666666666664%;
+}
+.row-12 .off-6 {
+  margin-left: 50%;
+}
+.row-12 .off-7 {
+  margin-left: 58.333333333333336%;
+}
+.row-12 .off-8 {
+  margin-left: 66.66666666666667%;
+}
+.row-12 .off-9 {
+  margin-left: 75%;
+}
+.row-12 .off-10 {
+  margin-left: 83.33333333333333%;
+}
+.row-12 .off-11 {
+  margin-left: 91.66666666666667%;
+}
+.row-12 .off-12 {
+  margin-left: 100%;
+}
 .row-12 .col-1,
 .row-12 .col-2,
 .row-12 .col-3,
@@ -170,6 +206,36 @@ pre code {
 }
 .row-10 .col-10 {
   width: 100%;
+}
+.row-10 .off-1 {
+  margin-left: 10%;
+}
+.row-10 .off-2 {
+  margin-left: 20%;
+}
+.row-10 .off-3 {
+  margin-left: 30%;
+}
+.row-10 .off-4 {
+  margin-left: 40%;
+}
+.row-10 .off-5 {
+  margin-left: 50%;
+}
+.row-10 .off-6 {
+  margin-left: 60%;
+}
+.row-10 .off-7 {
+  margin-left: 70%;
+}
+.row-10 .off-8 {
+  margin-left: 80%;
+}
+.row-10 .off-9 {
+  margin-left: 90%;
+}
+.row-10 .off-10 {
+  margin-left: 100%;
 }
 .row-10 .col-1,
 .row-10 .col-2,
@@ -260,6 +326,15 @@ pre code {
 }
 .split-3 .thirds.thirds-3 {
   width: 100%;
+}
+.split-3 off.thirds-1 {
+  margin-left: 33.333333333333336%;
+}
+.split-3 off.thirds-2 {
+  margin-left: 66.66666666666667%;
+}
+.split-3 off.thirds-3 {
+  margin-left: 100%;
 }
 .split-3 .thirds.thirds-1,
 .split-3 .thirds.thirds-2 {

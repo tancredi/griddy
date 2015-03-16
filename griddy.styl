@@ -1,58 +1,64 @@
 
 clearfix()
-	zoom 1
+    zoom 1
 
-	&:before, &:after
-		content ''
-		display table
+    &:before, &:after
+        content ''
+        display table
 
-	&:after
-		clear both
+    &:after
+        clear both
 
 
 grid-column(span, cols = 12)
-	width (span * 100 / cols)%
+    width (span * 100 / cols)%
 
+grid-offset(span, cols = 12)
+    margin-left ((span * 100) / cols)%;
 
-grid-system(cols = 12, gutter = 20px, child = '.col', all-columns = true, separate = '-', breakpoint = 400px)
-	margin-bottom gutter
+grid-system(cols = 12, gutter = 20px, child = '.col', offset = '.off', all-columns = true, separate = '-', breakpoint = 400px)
+    margin-bottom gutter
 
-	all = ''
+    all = ''
 
-	margin-left (gutter / -2)
-	margin-right @margin-left
-	clearfix()
+    margin-left (gutter / -2)
+    margin-right @margin-left
+    clearfix()
 
-	if all-columns
-		all = '& ' + child + separate + '1'
+    if all-columns
+        all = '& ' + child + separate + '1'
 
-		for x in (2 .. (cols - 1))
-			all = all + ', & ' + child + separate + x
+        for x in (2 .. (cols - 1))
+            all = all + ', & ' + child + separate + x
 
-		for x in (1 .. cols)
-			{child + separate + x}
-				grid-column(x, cols)
+        for x in (1 .. cols)
+            {child + separate + x}
+                grid-column(x, cols)
+                
+        for x in (1 .. cols)
+            {offset + separate + x}
+                grid-offset(x, cols)
 
-	else
-		all = child
+    else
+        all = child
 
-		{all}
-			grid-column(1, cols)
+        {all}
+            grid-column(1, cols)
 
-	{all}
-		float left
-		padding 0 (gutter / 2)
-		box-sizing border-box
-		min-height 1px
+    {all}
+        float left
+        padding 0 (gutter / 2)
+        box-sizing border-box
+        min-height 1px
 
-	mediaQuery = 'screen and (max-width: ' + breakpoint + ')'
+    mediaQuery = 'screen and (max-width: ' + breakpoint + ')'
 
-	@media mediaQuery
+    @media mediaQuery
 
-		margin 0
+        margin 0
 
-		{all}
-			float none
-			width auto
-			display block
-			margin-bottom gutter
+        {all}
+            float none
+            width auto
+            display block
+            margin-bottom gutter
