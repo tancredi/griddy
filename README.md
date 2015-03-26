@@ -102,6 +102,6 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 </div>
 ```
 
-#### Licence
+## Licence
 
 Copyright (c) 2014 Tancredi Trugenberger. - Released under the MIT license
