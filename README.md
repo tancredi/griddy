@@ -102,5 +102,6 @@ Apply the mixin `grid-system` to any selector to define a grid system.
 </div>
 ```
 
+#### Licence
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tancredi/griddy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Copyright (c) 2014 Tancredi Trugenberger. - Released under the MIT license
