@@ -162,6 +162,20 @@ pre code {
     display: block;
     margin-bottom: 20px;
   }
+  .row-12 .col-1,
+  .row-12 .col-2,
+  .row-12 .col-3,
+  .row-12 .col-4,
+  .row-12 .col-5,
+  .row-12 .col-6,
+  .row-12 .col-7,
+  .row-12 .col-8,
+  .row-12 .col-9,
+  .row-12 .col-10,
+  .row-12 .col-11,
+  .row-12 .off-11 {
+    margin-left: 0;
+  }
 }
 .row-10 {
   margin-bottom: 20px;
@@ -269,6 +283,18 @@ pre code {
     display: block;
     margin-bottom: 20px;
   }
+  .row-10 .col-1,
+  .row-10 .col-2,
+  .row-10 .col-3,
+  .row-10 .col-4,
+  .row-10 .col-5,
+  .row-10 .col-6,
+  .row-10 .col-7,
+  .row-10 .col-8,
+  .row-10 .col-9,
+  .row-10 .off-9 {
+    margin-left: 0;
+  }
 }
 .split {
   margin-bottom: 30px;
@@ -327,13 +353,13 @@ pre code {
 .split-3 .thirds.thirds-3 {
   width: 100%;
 }
-.split-3 off.thirds-1 {
+.split-3 .off.thirds-1 {
   margin-left: 33.333333333333336%;
 }
-.split-3 off.thirds-2 {
+.split-3 .off.thirds-2 {
   margin-left: 66.66666666666667%;
 }
-.split-3 off.thirds-3 {
+.split-3 .off.thirds-3 {
   margin-left: 100%;
 }
 .split-3 .thirds.thirds-1,
@@ -354,6 +380,11 @@ pre code {
     display: block;
     margin-bottom: 10px;
   }
+  .split-3 .thirds.thirds-1,
+  .split-3 .thirds.thirds-2,
+  .split-3 .off.thirds-2 {
+    margin-left: 0;
+  }
 }
 .col-test {
   width: 25%;
@@ -370,4 +401,14 @@ pre code {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
 }
