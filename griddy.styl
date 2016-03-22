@@ -20,6 +20,7 @@ grid-system(cols = 12, gutter = 20px, child = '.col', offset = '.off', all-colum
     margin-bottom gutter
 
     all = ''
+    all-offs = ''
 
     margin-left (gutter / -2)
     margin-right @margin-left
@@ -27,9 +28,13 @@ grid-system(cols = 12, gutter = 20px, child = '.col', offset = '.off', all-colum
 
     if all-columns
         all = '& ' + child + separate + '1'
+        all-offs = '& ' + offset + separate + '1'
 
         for x in (2 .. (cols - 1))
             all = all + ', & ' + child + separate + x
+
+        for x in (2 .. (cols - 1))
+            all-offs = all + ', & ' + offset + separate + x
 
         for x in (1 .. cols)
             {child + separate + x}
@@ -62,3 +67,8 @@ grid-system(cols = 12, gutter = 20px, child = '.col', offset = '.off', all-colum
             width auto
             display block
             margin-bottom gutter
+
+        if all-columns
+
+            {all-offs}
+                margin-left 0
