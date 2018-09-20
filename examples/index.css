@@ -136,7 +136,8 @@ pre code {
 .row-12 .col-8,
 .row-12 .col-9,
 .row-12 .col-10,
-.row-12 .col-11 {
+.row-12 .col-11,
+.row-12 .col-12 {
   float: left;
   padding: 0 10px;
   box-sizing: border-box;
@@ -156,23 +157,23 @@ pre code {
   .row-12 .col-8,
   .row-12 .col-9,
   .row-12 .col-10,
-  .row-12 .col-11 {
+  .row-12 .col-11,
+  .row-12 .col-12 {
     float: none;
     width: auto;
     display: block;
     margin-bottom: 20px;
   }
-  .row-12 .col-1,
-  .row-12 .col-2,
-  .row-12 .col-3,
-  .row-12 .col-4,
-  .row-12 .col-5,
-  .row-12 .col-6,
-  .row-12 .col-7,
-  .row-12 .col-8,
-  .row-12 .col-9,
-  .row-12 .col-10,
-  .row-12 .col-11,
+  .row-12 .off-1,
+  .row-12 .off-2,
+  .row-12 .off-3,
+  .row-12 .off-4,
+  .row-12 .off-5,
+  .row-12 .off-6,
+  .row-12 .off-7,
+  .row-12 .off-8,
+  .row-12 .off-9,
+  .row-12 .off-10,
   .row-12 .off-11 {
     margin-left: 0;
   }
@@ -259,7 +260,8 @@ pre code {
 .row-10 .col-6,
 .row-10 .col-7,
 .row-10 .col-8,
-.row-10 .col-9 {
+.row-10 .col-9,
+.row-10 .col-10 {
   float: left;
   padding: 0 10px;
   box-sizing: border-box;
@@ -277,21 +279,21 @@ pre code {
   .row-10 .col-6,
   .row-10 .col-7,
   .row-10 .col-8,
-  .row-10 .col-9 {
+  .row-10 .col-9,
+  .row-10 .col-10 {
     float: none;
     width: auto;
     display: block;
     margin-bottom: 20px;
   }
-  .row-10 .col-1,
-  .row-10 .col-2,
-  .row-10 .col-3,
-  .row-10 .col-4,
-  .row-10 .col-5,
-  .row-10 .col-6,
-  .row-10 .col-7,
-  .row-10 .col-8,
-  .row-10 .col-9,
+  .row-10 .off-1,
+  .row-10 .off-2,
+  .row-10 .off-3,
+  .row-10 .off-4,
+  .row-10 .off-5,
+  .row-10 .off-6,
+  .row-10 .off-7,
+  .row-10 .off-8,
   .row-10 .off-9 {
     margin-left: 0;
   }
@@ -363,7 +365,8 @@ pre code {
   margin-left: 100%;
 }
 .split-3 .thirds.thirds-1,
-.split-3 .thirds.thirds-2 {
+.split-3 .thirds.thirds-2,
+.split-3 .thirds.thirds-3 {
   float: left;
   padding: 0 5px;
   box-sizing: border-box;
@@ -374,14 +377,14 @@ pre code {
     margin: 0;
   }
   .split-3 .thirds.thirds-1,
-  .split-3 .thirds.thirds-2 {
+  .split-3 .thirds.thirds-2,
+  .split-3 .thirds.thirds-3 {
     float: none;
     width: auto;
     display: block;
     margin-bottom: 10px;
   }
-  .split-3 .thirds.thirds-1,
-  .split-3 .thirds.thirds-2,
+  .split-3 .off.thirds-1,
   .split-3 .off.thirds-2 {
     margin-left: 0;
   }

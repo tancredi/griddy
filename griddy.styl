@@ -30,11 +30,11 @@ grid-system(cols = 12, gutter = 20px, child = '.col', offset = '.off', all-colum
         all = '& ' + child + separate + '1'
         all-offs = '& ' + offset + separate + '1'
 
-        for x in (2 .. (cols - 1))
+        for x in (2 .. cols)
             all = all + ', & ' + child + separate + x
 
         for x in (2 .. (cols - 1))
-            all-offs = all + ', & ' + offset + separate + x
+            all-offs = all-offs + ', & ' + offset + separate + x
 
         for x in (1 .. cols)
             {child + separate + x}
